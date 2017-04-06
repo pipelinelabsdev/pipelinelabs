@@ -1,0 +1,341 @@
+.image-main-section .slide{
+	display: none;
+}
+
+.image-main-section .slide.active{
+	display: block;
+}
+
+.page-wrap #wrapper{
+min-height: 0 !important;
+}
+
+.date-box{
+	padding: 10px;
+}
+
+.date-box .col.xs-4{
+	margin: 0;
+}
+
+.job-box{
+	width: 100%;
+}
+
+#UserCandidateWorkInfoForm .chosen-container{
+/* 	width: 100% !important; */
+}
+
+.image-main-section ul li a{
+	width: auto;
+	height: auto;
+	display: block;
+
+}
+
+.image-main-section ul li a span{
+	display: block;
+	height: 16px;
+	width: 16px;
+	background: #323746;
+	margin-right: 8px;
+	border-radius: 16px;
+	opacity: 0.25;
+	cursor: pointer;
+}
+
+.image-main-section ul li a span:hover{
+	opacity: 0.5;
+}
+
+.image-main-section ul li a.active span{
+	opacity: 1;
+}
+
+.applied-for-jobs.job-results .logo-section .company-logo{
+	position: relative;
+}
+
+.logo{
+	height:50px;
+}
+
+label{
+	text-align: left;
+}
+
+.ui-slider-handle{
+	padding: 0 !important;
+}
+header{
+	padding:10px;
+}
+
+.page-wrap {
+min-height: 100%;
+}
+
+select{
+	background-color: #fff;
+}
+
+
+
+input[type=text], textarea, input[type=password], input[type=email], input[type=tel],input[type=number] {
+background: #fff;
+padding: 7px;
+border: none;
+border-radius: 0;
+box-shadow: none;
+outline: none;
+padding: 10px 12px;
+font-size: 14px;
+height: auto;
+border: 1px #e1e4e9 solid;
+color:#666;
+
+}
+
+
+p{
+  color: #666;
+  line-height: 1.8em;
+}
+
+.error-message {
+  color:#cc0000;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.has-error .form-control:focus {
+  border-color:#cc0000;
+  
+}
+.has-error .form-control {
+  border-color:#cc0000;
+}
+
+#distance-range{
+	display: none;
+}
+.file_button_container p{
+	color: white;
+}
+
+.black-text{color:#333; margin-bottom: 0;}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	border: none;
+	padding-bottom: 0;
+	padding: 18px 0px;
+}
+#job-box-0, .job-box.active{
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+.job-box{
+	display: none;
+}
+
+.job-box 
+
+.new-select{
+	width: 100%;
+	background: white;
+	border-radius: 0;
+	padding: 12px;
+	font-size: 18px;
+}
+
+#sidebar-wrapper .mini-menu{
+	padding: 10px 34px;
+}
+#sidebar-wrapper .mini-menu	li{
+	margin-bottom: 10px;
+	background: none;
+}
+#sidebar-wrapper .mini-menu	li a{
+	background: none;
+	color: #848484;
+	font-size: 12px;
+}
+
+.checkbox-border.candidate.checked {
+background-position: 0px -109px;
+}
+.checkbox-border.candidate {
+background: url("/img/assets/checkboxes.png");
+background-repeat: no-repeat;
+background-position: -1px 5px;
+}
+
+.checkbox-border.candidate.checked {
+background-position: -1px -161px;
+}
+
+.checkbox-border.company {
+background: url("/img/assets/checkboxes.png");
+background-repeat: no-repeat;
+background-position: -368px 5px;
+}
+
+.checkbox-border.company.checked {
+background-position:-368px -161px;
+}
+
+.checkbox-border {
+height: 163px;
+}
+
+.status-section .search-btn{
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1.25px;
+	border: 2px #2fb8ac solid;
+	border-radius: 15px;
+	color: #2fb8ac;
+	padding: 4px 18px;
+	background-color: #fff;
+}
+
+.search-btn:hover{
+	background: #2fb8ac;
+	color: white;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+.remove-inquiries-btn,
+.remove-saved-search-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #f6f5f6;
+  border: 1px #e5e5e5 solid;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #666;
+}
+.remove-inquiries-btn {
+  background: #fff;
+  border-color:#d5d5d5;
+  margin-top:9px;
+  color:#787878;
+}
+.remove-saved-search-btn:hover {
+	background: #e8e9eb;
+	border: 1px #cccccc solid;
+}
+
+.checkbox-email-border {
+height: auto;
+}
+
+.checkbox-email-border input[type=checkbox] {
+/*height: 30px;
+box-shadow: none;
+width: 100%;
+opacity: 0;
+cursor: pointer;*/
+}
+
+.checkbox-email-border  {
+/*background: url("/img/assets/alert.png");
+background-repeat: no-repeat;
+background-position:0 -21px;
+height: 17px;*/
+}
+
+.checkbox-email-border.checked {
+/*background-position:0 0px;*/
+}
+.checkbox-border input[type=checkbox] {
+/*height: 163px;
+box-shadow: none;
+width: 360px;
+opacity: 0;
+cursor: pointer;*/
+}
+input[type=radio], input[type=checkbox] {
+margin: 4px 0 0;
+margin-top: 1px \9;
+line-height: normal;
+}
+
+.file_button_container, .file_button_container input {
+
+    float: left;
+    margin: 22px;
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+.col-xs-3,.col-xs-4,.col-md-4,.col-md-3,.col-md-8, .col-md-6{
+	width: 100%;
+}
+
+.recommended-job{
+	margin-bottom: 10px;
+}
+
+.sidebar-image-space{
+	margin-bottom: 50px;
+}
+
+.col-md-12{
+	overflow: hidden;
+}
+
+.side-box{
+	margin-bottom: 50px;
+}
+
+#usernav li a{
+	padding: 13px 8px 15px 8px;
+}
+
+.profile-image-box .profile-pic {
+height: 100px;
+width: 100px;
+float: left;
+margin: 0 auto;
+float: none;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+border: none;
+padding-bottom: 0;
+padding: 5px 0px;
+width: 100%;
+display: block;
+}
+
+}
+
+/*  Custom CSS  */
+
+.thenav {
+    overflow: hidden;
+}
+
+#paymentform h3 {margin-top:0px; text-transform:uppercase;}
+
+.credit-card-box .panel-heading {overflow:hidden;}
+.credit-card-box .panel-heading h3 {margin:10px 5px;}
+
+.pricing-content {overflow:hidden; list-style:none; padding:0px; margin-bottom:0px;}
+.pricing-content li {color:#fff;}
+
+.payment-btn {background-color:transparent; border:2px solid #fff; color:#fff; padding:4px 30px; margin-bottom:5px;}
+
+.btn-lg {padding:5px 16px;}
+
+.dashboard-cards {overflow:hidden;}
+.card-container {background-color:#ff0000; padding:7px 15px;}
+.card-container h4 {font-size:25px; color:#fff;}

@@ -1,0 +1,782 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>SignUp | Pipeline™</title>
+	
+	<meta name="viewport" content="width=1500">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/simple-sidebar.css" />
+	<link rel="stylesheet" type="text/css" href="css/sass.css" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script type='text/javascript' src='js/bootstrap.js'></script>
+	<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/jquery.tagsinput.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css" />
+	<script type="text/javascript" src="js/jquery.multiselect.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.multiselect.css" />
+	
+	<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+	<script type="text/javascript" src="js/chosen.js"></script>
+	<script type="text/javascript" src="js/mask.js"></script>
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sun.css" />
+	<link rel="stylesheet" type="text/css" href="css/nathan.css" />
+	<link rel="stylesheet" type="text/css" href="css/pricingpage.css" />
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js"></script>
+	
+	<!-- If you're using Stripe for payments -->
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	
+
+
+
+</head>
+<style>
+.ui-multiselect{
+	width:100% !important;
+	background: white;
+	border: 1px #e5e5e5 solid;
+	padding: 12px;
+	color: #000;
+}
+
+.ui-autocomplete{
+	z-index: 99999999999;
+}
+
+.loginas-box {
+  display:block;
+  position: fixed;
+  z-index: 9999999;
+  width:400px;
+  height: 50px;
+  background: #333;
+  top:0;
+  left:50%;
+  margin-left: -200px;
+  text-align: center;
+  color:#fff;
+}
+.loginas-box p {
+  line-height: 50px;  
+  color:#999;
+}
+.loginas-box p a {
+  color:#fff;
+}
+
+.green-bg {
+  background: #2fb8ac;
+}
+
+.rate-title {
+  background: #1080f2;
+}
+
+.rate-title p {
+  font-size: 18px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.rate-box {
+  background: #3493f4;
+  padding: 10px;
+}
+
+.rate-box .info {
+  font-size: 18px;
+}
+
+.rate-price {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0px; color:#fff;
+}
+
+.rate-price span {
+  font-size: 32px;
+  display: inline-block;
+  vertical-align: top; color:#fff;
+}
+
+.title-area p {
+  padding: 20px 0;
+}
+
+.why-pipeline .col-md-2.col-xs-2 {
+  padding: 0 2px;
+}
+
+.logos {
+  width: 100%;
+}
+
+.button.white {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+  line-height: 40px;
+  width: auto;
+  padding: 0 35px;
+  display: inline-table;
+  float: none;
+  margin: 0 auto;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+.button.white:hover {
+  color: #2fb8ac;
+  background: #fff;
+}
+
+.bottom-sign-up .button.white:hover {
+  color: #323746;
+}
+
+.membership-txt {margin-bottom:10px; color:#fff;}
+
+</style>
+	<body>
+
+	 
+	
+		
+		<div class="page-wrap">
+   		
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+
+	      	
+      	    <a href="#" class="float-left" id="logo"><img src="images/logo.png"></a>
+          	    <div class="float-right">
+
+	      <!-- Public Nav -->
+	      	
+	      <ul class="horizontal public-nav top-right-header-nav">
+<!--
+		        <li class=""><a href="/pages/home/">Home</a>
+		        </li>
+-->
+  	        <li class="">
+  	          <a>How It Works</a>
+  	          <ul>
+  	            <li><a href="#">For Companies</a></li>
+  	            <li><a href="#">For Candidates</a></li>
+  	          </ul>
+  	        </li>
+			  <li class=""><a href="#">About</a>
+			  </li>
+			  <li class="">
+				  <a href="#">Blog</a>
+			  </li>
+  	        <li class=""><a href="#">Contact</a>
+  	        </li>
+  	        <li class=""><a href="#">Login</a>
+  	        </li>
+  	        <li class=""><a class="red-circle" href="signup.html">Sign Up</a>
+  	        </li>
+  	     </ul>
+	      	
+	    </div>
+    </div>
+</nav>
+<div class="section nav-spacer"></div>    						
+<p class="section-header text-center vpadding-40">Sign up for Pipeline</p>
+
+<!-- <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-12"> -->
+<div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">
+
+    <div class="full-width text-center margin-bottom-20">
+        <a href="#" class='button-facebook button' role='button' ><i></i>Start with Facebook</a>
+    </div>
+    <div class="full-width text-center margin-bottom-50">
+        <a class='button-linkedin button' role='button' href='#'><i></i>Start with Linkedin</a>	
+    </div>						
+
+    <img src="images/or.png" class="center-block margin-bottom-40" style="max-width: 100%">
+
+    <form action="" class="form margin-bottom-100 oh" role="form" id="UserregistrationSignUpUserRegistrationForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>	<div class="form-group ">
+            <label for="">First name</label>
+            <input name="data[Userregistration][firstname]" class="form-control " maxlength="255" type="text" id="UserregistrationFirstname"/>            <span class="input-message"></span>	
+	</div>
+	<div class="form-group ">
+            <label for="">Last name</label>
+            <input name="data[Userregistration][lastname]" class="form-control " maxlength="255" type="text" id="UserregistrationLastname"/>            <span class="input-message"></span>	
+	</div>
+        <div class="form-group ">
+            <label for="">Email address</label>
+            <input name="data[Userregistration][emailaddress]" class="form-control " maxlength="255" type="text" id="UserregistrationEmailaddress"/>            <span class="input-message"></span>	
+        </div>
+        <div class="form-group half " style="padding-right:10px;">
+            <label for="">Password</label>
+            <input name="data[Userregistration][password]" class="form-control " type="password" id="UserregistrationPassword"/>            <span class="input-message"></span>	
+        </div>
+        <div class="form-group half " style="padding-left:10px;">
+            <label for="">Confirm Password</label>
+            <input name="data[Userregistration][password2]" class="form-control " type="password" id="UserregistrationPassword2"/>            <span class="input-message"></span>	
+        </div>
+					    	
+        <hr class="thick-hr">
+        <div class="form-group margin-bottom-35 ">
+            <p class="fine-print" for="">By signing up for Pipieline Labs, I agree to <a href="#"> Terms and Conditions</a> and <a href="#"> Privacy Policy</a>. Already a member? <a href="/users/login">Login Here</a></p>
+					    	  
+            <span class="input-message"></span>	
+        </div>
+        <div class="full-width">
+            <input type='submit' id="#pytm"class='button btn btn-default big-red full-width' style="width:100%;" value='Sign up' >
+        </div>
+		
+    </form>					
+    
+</div>
+
+<section class="grey-bg" id="pytm">
+  <div class="container center-block vpadding-100 max-width-1080">
+
+    <div class="col-md-4">
+      <div class="rate-title text-center">
+        <p class="white-text"><strong>Monthly Plan<strong></p>
+      </div>
+      
+      <div class="rate-box text-center">
+				<p class="rate-price">$<span>599</span>/mo</p>
+				<p class="text-center membership-txt">Membership</p>
+				<ul class="pricing-content">
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;Free 10 Day Trail</li>
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;Unlimited Job Posting</li>
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;Employer Branded Page</li>
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;Unlimited Cadidates Searches</li>
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;candidate Direct Messaging</li>
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;0% Hiring Fee</li>
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;Unlimited Hires</li>
+					<li><i class="fa fa-check"></i>&nbsp;&nbsp;Featured Company Ad for 30 Days</li>
+				</ul>
+				<br>
+        <button href="javascript:void(0);" class="payment-btn" onClick="window.location.href=$(this).attr('href');" data-pricing-guideline="$599/Mo" data-type="2">Free Trial</a>
+      </div>
+    </div>
+    
+    <div class="col-md-8 why-pipeline">
+      <div id="paymentform" class="paymentform">
+
+		<h3 class="text-center">Make a payment</h3>
+
+				<!-- CREDIT CARD FORM STARTS HERE -->
+		            <div class="panel panel-default credit-card-box">
+		                <div class="panel-heading display-table" >
+		                    <div class="display-tr" >
+		                        <h3 class="panel-title display-td" >Payment Details</h3>                      
+		                            <img class="img-responsive pull-right display-td" src="images/accepted_c22e0.png">
+		                    </div>                    
+		                </div>
+		                <div class="panel-body">
+		                    <!--form role="form" id="payment-form"-->
+		                    	
+		                    	<input type="hidden" name="plan_type" id="plan_type" value="2" />
+		                    
+		                        <div class="row">
+		                            <div class="col-xs-12">
+		                                <div class="form-group">
+		                                    <label for="cardNumber">CARD NUMBER</label>
+		                                    <div class="input-group">
+		                                        <input 
+		                                            type="tel"
+		                                            class="form-control"
+		                                            name="cardNumber"
+		                                            placeholder="Valid Card Number"
+		                                            autocomplete="cc-number"
+		                                            required autofocus 
+		                                        />
+		                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+		                                    </div>
+		                                </div>                            
+		                            </div>
+		                        </div>
+		                        <div class="row">
+		                            <div class="col-xs-7 col-md-7">
+		                                <div class="form-group">
+		                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+		                                    <input 
+		                                        type="tel" 
+		                                        class="form-control" 
+		                                        name="cardExpiry"
+		                                        placeholder="MM / YY"
+		                                        autocomplete="cc-exp"
+		                                        required 
+		                                    />
+		                                </div>
+		                            </div>
+		                            <div class="col-xs-5 col-md-5 pull-right">
+		                                <div class="form-group">
+		                                    <label for="cardCVC">CV CODE</label>
+		                                    <input 
+		                                        type="tel" 
+		                                        class="form-control"
+		                                        name="cardCVC"
+		                                        placeholder="CVC"
+		                                        autocomplete="cc-csc"
+		                                        required
+		                                    />
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="row">
+		                            <div class="col-xs-12">
+		                                <button href="dashboard.html" class="btn btn-success btn-lg btn-block" onclick="window.location.href=$(this).attr('href');"  type="submit">Start My Free Trial.</button>
+		                            </div>
+		                        </div>
+		                        <div class="row" style="display:none;">
+		                            <div class="col-xs-12">
+		                                <p class="payment-errors"></p>
+		                            </div>
+		                        </div>
+		                    <!--/form-->
+		                </div>
+		            </div>            
+				<!-- CREDIT CARD FORM ENDS HERE -->
+
+</div><!-- end .paymentform -->
+    </div>
+
+  </div>
+</section>
+    </div>
+    
+<nav  id="footer" class="site-footer" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	      	  <li class="">
+	      	  	<p>&#169; 2017 Copyright Line</p>
+	      	  </li>
+		        <li class=""><a href="#">How It Works</a></li>
+  	        <li class=""><a href="#">About</a></li>
+  	        <li class=""><a href="#">Contact</a></li>
+  	        <li class=""><a href="#">Terms</a></li>
+  	        <li class=""><a href="#">Privacy</a></li>
+<!--   	        <li class=""><a href="/faqs/faq/">FAQ</a></li> -->
+
+						</ul>
+						
+						<ul class="right-nav nav navbar-nav">
+							<li class=""><a href="#">contact@pipelinelabs.com</a></li>
+							
+							<li>
+								<ul class="social-list">
+									<li>
+										<a target="_blank" href="#" class="facebook-icon"></a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="twitter-icon"></a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="linkedin-icon"></a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="google-icon"></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+	    </div>
+    </div>
+</nav>
+ 
+    
+		<div class="search-loader">
+		
+		</div>
+    <div id="bookmark-modal">
+    
+
+    </div>
+
+    <div class="bookmark-overlay">
+    
+    </div>
+    		    			<script type="text/javascript" src="/js/recurring.js"></script>
+    					
+    
+    <script type="text/javascript">
+
+bookmarkhtml = '<a class="modal-close"></a>      <div id="modal-title">Bookmark</div>      <div id="modal-content">     <p style="text-align:center;">You do not have any job openings at this time. Please create a job opening to bookmark candidates.</p><input type="button" class="button green full-width" value="Create Job Opening" style="margin-top:15px;" onclick="location.href=\'/openings/add_company_job_opening\'">    </div>';    
+
+
+
+    
+    	$(document).ready(function(){
+    	
+    	
+    	
+
+
+    	$(window).scroll(function(){
+      
+        if( $(this).scrollTop() > 0){
+          
+      	$('.navbar-default').addClass('fixed');
+          
+        } else {
+          
+      	$('.navbar-default').removeClass('fixed');
+          
+        }
+      	
+      	
+    	});
+
+
+          $('.dollar-amount').number(true,0);
+    	
+    	  if($('.chosen').length > 0){
+      	  
+      	  $('.chosen').chosen({});
+    	  }
+    	  
+    	  if($('#savethissearch').is(':checked')){
+      	  
+      	  $('#savethissearchtitle').removeClass('disabled');
+          $('#savethissearchtitle').removeAttr('disabled');
+    	  } else {
+      	  
+      	  $('#savethissearchtitle').addClass('disabled');      	  
+          $('#savethissearchtitle').attr('disabled','disabled');
+    	  }
+    	
+    		$('#savethissearch').change(function(){
+    	  if($('#savethissearch').is(':checked')){
+      	  
+      	  $('#savethissearchtitle').removeClass('disabled');
+          $('#savethissearchtitle').removeAttr('disabled');
+    	  } else {
+      	  
+      	  $('#savethissearchtitle').addClass('disabled');      	  
+          $('#savethissearchtitle').attr('disabled','disabled');
+    	  }				});
+
+
+	    	$(function() {
+			    $( "#slider-range .slider-bar" ).slider({
+			      range: true,
+			      min: 0,
+			      max: 50,
+			      values: [ 0, 5 ],
+			      slide: function( event, ui ) {
+						$( "#amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] + ' years');
+						$( "#sliderspan" ).html( ui.values[ 0 ] + " - " + ui.values[ 1 ] + ' years');
+					},
+					stop: function(event, ui) {
+						$( "#amount").trigger('change')
+					}
+			    });
+				if($( "#amount" ).val() == '') {
+					$("#amount").val('Select options');
+				}
+			      
+			    $( "#salary-range .slider-bar" ).slider({
+			      range: true,
+			      min: 0,
+			      max: 500000,
+			      step: 5000,
+			      values: [ 30000, 100000 ],
+			      slide: function( event, ui ) {
+			        $( "#salary" ).val("$" +  ui.values[ 0 ] + " - $" + ui.values[ 1 ]).trigger('change');
+			      },
+					stop: function(event, ui) {
+						$( "#salary").trigger('change')
+					}
+			    });
+			    $( "#salary" ).val('Select options');
+			    
+			    $( "#distance-range .slider-bar" ).slider({
+			      range: 'min',
+			      min: 0,
+			      max: 100,
+			      step: 5,
+			      value: 15,
+			      slide: function( event, ui ) {
+			        $( "#CompanyDistance" ).val(ui.value ).trigger('change');
+			        $( "#distancespan" ).html(ui.value +' ');
+			      },
+					stop: function(event, ui) {
+						$( "#CompanyDistance").trigger('change')
+					}
+			    });
+			  });
+  
+  			$('.slider-holder ').click(function(event){
+  				event.stopPropagation();
+  			
+  			});
+  			$('.slider-field ').click(function(event){
+  				var sliderid = $(this).attr('slider-id');
+  				$('#'+sliderid).show();
+  				event.stopPropagation();
+  			});
+  				
+  			$('html').click(function(){
+  				$('.slider-holder').hide();
+  			});
+  			
+  
+    		var config = {
+/* 		      '.chosen-select'           : {}, */
+		      '.chosen-select-deselect'  : {allow_single_deselect:true},
+		      '.chosen-select-no-single' : {disable_search_threshold:10},
+		      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+		      '.chosen-select-width'     : {width:"95%"}
+		    }
+		    for (var selector in config) {
+		      $(selector).chosen(config[selector]);
+		    }
+		    
+		    if($('.chosen-select').length > 0){		    
+
+
+
+		    $('.chosen-select').chosen({
+  		    
+  		    
+		    });
+		    
+  		    $('.chosen-container-multi .chosen-drop').append('<a class="select-all">select all</a>');
+  		    
+  		    $('a.select-all').click(function(){
+            $('select.chosen-select option').prop('selected', true);
+            $('select.chosen-select').trigger('chosen:updated');  		    
+  		    });
+		    
+		    }
+		    
+		    
+
+    		if(window.location.hash == '#advanced'){
+    			$("#extended-search-box").addClass('expanded');
+    			$('#extend-search-trigger').addClass('active');
+    		}
+
+    		$('#extend-search-trigger').on('click',function(){
+    			$("#extended-search-box").toggleClass('expanded');
+    			$(this).toggleClass('active');
+
+          if($("#extend-search-trigger").hasClass('active')){      
+       		  window.location.hash = '#advanced'; 
+          } else {
+       		  parent.location.hash = '#_';
+          }
+    			return false;
+    		});
+    		    		  
+    		
+    		
+    		$('.has-child-ul-trigger').on('click',function(){
+    			$(this).parent().toggleClass("hover");
+    			return false;
+    		});
+    		
+    		$('#tags_2').tagsInput({width:'auto'});
+    		$('#tags_3').tagsInput({width:'auto'});
+    		$('.industry-field').tagsInput({width:'auto',
+    														autocomplete_url:'/industries/test',
+    														defaultText:'Type an industry',
+    														});
+    		$('.skill-field').tagsInput({width:'auto',
+    														autocomplete_url:'/industries/test',
+    														defaultText:'Type an industry',
+    														});
+
+
+   			$(".multi-select").each(function(){
+
+   				placeholder = $(this).attr('data-placeholder');
+   				
+   				$(this).multiselect({
+   					noneSelectedText: placeholder
+   				});
+
+   			});
+
+
+
+				var i = 1;
+				$("#addNewExperience").on('click',function(){
+					i++;
+					if(i <= 10){
+						$("#job-box-"+i).addClass('active');
+					}
+					if(i >= 10){
+						$("#addNewExperience").hide();
+					}
+					$('#job-box-'+i+' .chosen-date.date, #job-box-'+i+' .chosen-seniority, #job-box-'+i+' .chosen-education').chosen({disable_search: true});
+					
+					return false;
+				});
+				
+				$(".inquiry-toggle").on('click',function(){
+				  $(this).parent().toggleClass('active');
+    			$(this).parent().find('ul').toggleClass('active');
+    		});
+				
+    		
+    		$("#searchSubmit").on('click',function(){
+    			console.log($("#tags_3").val());
+    		});
+    	});
+    	
+    	$(window).load(function(){
+    		$(".ui-multiselect-menu").width($(".ui-multiselect").outerWidth());
+    	});
+    	
+    	//Set Email Preference for Saved Searches
+			var that = this;
+			$(document).on('click', '.sendEmail', function(){
+				var target_id = $(this).attr('target-id');
+				console.log(target_id);
+				$.ajax({
+				  type : 'POST',
+				  url : '/openings/setemail/' + target_id,
+				  dataType : 'html',
+				  context: this,
+				  success : function(data){
+				  	if(data){
+				  		// $(this).parent().toggleClass("checked");
+				  	}
+			    }
+			 	})   
+			});
+			
+			
+			//Remove Saved Searches
+			var that = this;
+			$(document).on('click', '.remove-saved-search-btn', function(){
+				var target_id = $(this).attr('target-id');
+				console.log(target_id);
+				$.ajax({
+				  type : 'GET',
+				  url : '/openings/removesaved/' + target_id,
+				  dataType : 'html',
+				  context: this,
+				  success : function(data){
+				  	if(data){
+				  		$('#savedsearch-'+target_id).remove();
+				  	}
+			    }
+			 	})   
+				return false;
+				
+		
+			});
+			$(document).on('click', '.js-delete-opening', function(e) {
+				e.preventDefault();
+				if(confirm('Are you sure?')) {
+					$('.js-delete-checkbox').attr('checked', 'true');
+					$(this).parent().find('input[type="submit"]').trigger('click');
+				}
+			});
+			$(document).on('click', '.js-skill-toggle', function(e) {
+				$('.small-skill-list').toggleClass('hidden');
+				$('.big-skill-list').toggleClass('hidden');
+			});
+			$(document).on('change', '.js-present', function(e) {
+				if($(this).is(':checked')) {
+					$(this).parents('.job-box')
+						.find('.end-date-box')
+						.stop()
+						.animate({
+							'opacity':.40,
+							'cursor': 'not-allowed'
+						}, 500);
+				}
+				else {
+					$(this).parents('.job-box')
+						.find('.end-date-box')
+						.removeAttr('disabled')
+						.stop()
+						.animate({
+							'opacity':1,
+							'cursor': 'pointer'
+						}, 500);
+				}
+			});
+			$('.js-present').trigger('change');
+		</script> 
+		<script type="text/javascript">
+
+$(document).ready(function() {
+	$('.sign-up-paid').on('click', function(e) {
+		e.preventDefault();
+		
+		var pricingGuideline = $(e.currentTarget).data('pricing-guideline');
+		var type = $(e.currentTarget).data('type');
+		
+		$('span#pricing-guideline').html(pricingGuideline);
+		$('#plan_type').val(type);
+		
+		$('.paymentform').fadeIn();
+		
+		$('html, body').animate({
+        	scrollTop: $(".paymentform").offset().top
+    	}, 500);
+		
+	});
+});
+
+</script>
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47356316-3', 'auto');
+  ga('send', 'pageview');
+
+</script> -->
+	</body>
+</html>

@@ -1,0 +1,260 @@
+section#themo_page_header_1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section#themo_page_header_1 {
+    background-image: url('http://stratus-3c99.kxcdn.com/stratus/wp-content/uploads/2015/03/pricing-1920x982.jpg');
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.full-header-img {
+    opacity: 1;
+}
+
+ .page-title {
+    border-bottom: 0;
+}
+
+.page-title.centered {
+    padding: 60px 15%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.page-title {
+    margin: 0 15px;
+}
+
+.light-text .page-title h1 {
+    color: #fff;
+}
+
+.light-text, .light-text h1, .light-text h2, .light-text h3, .light-text h4, .light-text h5, .light-text h6, .light-text p, .light-text ul, .light-text ul li, .light-text ol, .light-text ol li, .light-text dl, .light-text dl dt, .light-text i, .light-text i.accent {
+    color: #fff;
+}
+
+.page-title h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+}
+
+.page-title .page-title-button {
+    margin: 30px 0 0;
+}
+
+.page-title.centered .th-btn {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.light-text .btn-cta, .light-text .btn-standard {
+    color: #fff;
+}
+
+.page-title .th-btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.page-title .btn-standard, .page-title .btn-ghost, .page-title .a2c-btn a.button {
+    font-size: 18px;
+}
+
+section#themo_service_block_split_1 {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+section#themo_service_block_split_1 {
+    background-color: #00d379;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.light-text .section-header .header-icon {
+    color: rgba(255,255,255,0.5);
+}
+
+.section-header .header-icon {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #a3a3a3;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 16px;
+    margin: 0 0 30px;
+    margin: 0;
+}
+
+.split-blocks .service-block {
+    margin-bottom: 30px;
+}
+
+.slideLeft {
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.med-icon {
+    font-size: 32px;
+}
+
+.slideLeft {
+    visibility: visible !important;
+}
+
+.split-blocks .service-block i {
+    float: left;
+}
+
+.split-blocks .service-block h3 {
+    margin-top: 0;
+    padding-top: 4px;
+    margin-left: 60px;
+}
+
+.split-blocks .service-block p {
+    margin-left: 60px;
+}
+
+section#themo_brands_1 {
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+section#themo_brands_1 {
+    background-color: #2b8dd6;
+}
+
+.brands {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.brands img {
+    margin: 0 20px 30px;
+    max-width: 100%;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+section#themo_service_block_1 {
+    padding-top: 50px;
+    padding-bottom: 125px;
+        background-color: #f0f3f7;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 16px;
+    margin: 0 0 30px;
+    margin: 0;
+}
+
+.service-block.standard-block {
+    margin-bottom: 40px;
+}
+
+.med-icon {
+    font-size: 32px;
+}
+
+.service-block.standard-block h3 {
+    margin-top: 0;
+    padding-top: 4px;
+    margin-left: 60px;
+    font-size: 22px;
+}
+
+.service-block.standard-block p {
+    margin-left: 60px;
+}
+
+.btn-standard {
+    color: #fff;
+    background-color: #045089;
+    border-color: #045089;
+}
+
+#themo_page_header_1 .btn {
+    padding: 10px 45px;
+    border-radius: 50px;
+    white-space: normal;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    
+}
+
+.section-header p {
+	text-transform: lowercase;
+}
+
+#themo_service_block_1 .service-block .med-icon {
+	float: left;
+}
+
+#themo_service_block_1 .service-block .service-block-text {
+	float: left;
+	width: 80%;
+}
+
+#themo_page_header_1 .page-title-h1 {
+	margin: 0;
+	padding: 0;	
+}
+
+#themo_page_header_1 .page-title-h4 {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+}
+
+.sign-up-paid {
+	background-color: #2fb8ac;
+	border-color: #2fb8ac;
+	width: 60%;
+}
+
+#themo_service_block_split_1 .contact-form {
+	margin-top: 60px;
+}

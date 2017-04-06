@@ -1,0 +1,422 @@
+.main {
+  padding-left: 320px;
+  transition: all 0.4s ease 0s;
+  position: relative;
+  
+}
+
+.content-area{
+	padding-top: 60px;
+	padding-bottom: 50px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.summary{
+    opacity: 0;
+    position: relative;
+    -webkit-transition: opacity .5s ease-in;
+       -moz-transition: opacity .5s ease-in;
+        -ms-transition: opacity .5s ease-in;
+         -o-transition: opacity .5s ease-in;
+            transition: opacity .5s ease-in;
+}
+
+.summary.load {
+    opacity: 1;
+    top:0;
+}
+
+.ytplayer{
+	margin-bottom: 10px;
+}
+
+#veryTop{
+	
+	height: 50px;
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+a{
+	color: #4399c5;
+}
+
+.no-margin{
+	margin: 0;
+	margin-bottom: 0 !important;
+}
+
+#scrollToTopBox{
+	position: fixed;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -472px;
+
+}
+
+	
+	#gototop{
+color: #fff;
+text-decoration: none;
+font-weight: 100;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+position: absolute;
+bottom: 20px;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in;
+-moz-transition: opacity .5s ease-in;
+-ms-transition: opacity .5s ease-in;
+-o-transition: opacity .5s ease-in;
+transition: opacity .5s ease-in;
+left: 0;
+}
+
+#gototop.hasScrolled{
+	opacity: 1;
+}
+
+#bigHead{
+position: absolute;
+top: 70px;
+left: 0;
+width: 100%;
+background: url('../images/blended-face.png');
+height: 600px;
+background-repeat: no-repeat;
+background-position: center top;
+opacity: .5;
+}
+
+	#stereo{
+	display: block;
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 190px;
+	}
+	
+	#columbiaLogo{
+		padding-bottom: 10px;
+		width: 40px;
+	}
+	
+	.horizontal{
+		list-style: none;
+		padding: 0;
+	}
+	
+	.horizontal li{
+		display: inline-block;
+		float: left;
+	}
+	
+	
+
+
+
+
+.content-area p{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.content-area img {
+width: 100%;
+height: auto;
+}
+
+.summary{
+	font-size: 14px;
+	color: white;
+	
+}
+
+.landing-page-img{
+	margin-right: -55px;
+	margin-left: -55px;
+}
+
+#landinglogo {
+	width: 310px;
+	margin-left: -40px;
+	position: relative;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+#landinglogo .img{
+	width: 100%;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+#contentHolder{
+position:relative;
+}
+
+.leftsidebar {
+    position: absolute;
+    top: 0;
+    width: 160px;
+}
+.leftsidebarfixed {
+    position: fixed;
+    top: 0;
+}
+.content {
+    float: left;
+    position: relative;
+}
+
+.menu-main-menu-container{
+	padding-top: 10px;
+}
+
+#logo img{
+	width: 100%;
+}
+
+/*
+#sideBar{
+	position: fixed;
+	top: 0;
+	padding-top: 75px;
+}
+*/
+.mini-menu {
+  display:block;
+  float: left;
+  width:100%;
+}
+#sidebar-wrapper {
+
+  display:block;
+  float: left;
+  margin-right: 0;
+  margin-left: -320px;
+  width: 270px;
+  /* height: 100%; */
+  /*overflow-y: auto;*/
+  z-index: 1000;
+  padding-bottom: 50px;
+  /* transition: all 0.4s ease 0s; */
+}
+#sidebar-wrapper .chosen-container > ul {
+    height: 30px !important;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  z-index: 99999;
+}
+
+#sidebar-wrapper ul {
+  position: relative;
+  top: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar-wrapper ul li {
+  text-transform: uppercase;
+}
+
+
+
+#sidebar-wrapper ul li a {
+  color: #666666;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  font-family: 'Dosis', sans-serif;
+  line-height: 30px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color:#fff;
+  background-size: 70px 140px;
+  padding-left: 70px;
+}
+#sidebar-wrapper ul li.active a {
+  color:#fff;
+  background-position: left bottom;
+
+}
+#sidebar-wrapper ul li:hover a {
+
+}
+#sidebar-wrapper ul.sidebar-nav > li.active:hover a {
+  
+}
+
+#sidebar-wrapper ul li.dashboard-link a {
+  background-image:url(../images/ico-dashboard.png);
+}
+
+#sidebar-wrapper ul li.profile-link a {
+  background-image:url(../images/ico-profile.png);
+}
+
+#sidebar-wrapper ul li.inquiries-link a {
+  background-image:url(../images/ico-inquiries.png);
+}
+
+#sidebar-wrapper ul li.jobs-link a {
+  background-image:url(../images/ico-jobs.png);
+}
+
+#sidebar-wrapper ul li.search-link a {
+  background-image:url(../images/ico-search.png);
+}
+
+#sidebar-wrapper ul li.settings-link a {
+  background-image:url(../images/ico-setting.png);
+}
+
+
+#sidebar-wrapper ul > .sidebar-brand {
+  line-height: 60px;
+  font-size: 18px;
+}
+
+#sidebar-wrapper ul > .sidebar-brand a {
+  color: #999999;
+}
+
+#sidebar-wrapper ul > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar{
+margin-bottom: 0;
+}
+
+.inset {
+  padding: 20px;
+}
+
+.navbar-toggle.active .icon-bar{
+	background: black;
+}
+
+.navbar-toggle.active{
+	background: white;
+}
+
+@media (max-width:990px) {
+.landing-page-img{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#landinglogo {
+	width: 310px;
+	margin-left: 15px;
+	position: relative;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+}
+
+@media (max-width:960px) {
+#sidebar-wrapper {
+margin-left: -320px;
+width: 270px;
+}
+
+#scrollToTopBox {
+position: fixed;
+bottom: 0px;
+left: 0%;
+width: 100%;
+margin-left: 0px;
+}
+
+#gototop{
+	left: 20px;
+}
+}
+
+
+@media (max-width:860px) {
+.main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+}
+
+@media (max-width:767px) {
+
+#gototop, #gototop.hasScrolled{
+	display: none;
+}
+
+.content-area{
+	padding-top: 10px;
+}
+
+#menu-toggle {
+display: inline-block;
+position: absolute;
+left: 0px;
+top: 0;
+z-index: 99999999;
+}
+
+.main {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  
+  left: 0;
+}
+
+.main.active {
+  position: relative;
+  left: 330px;
+  transition: all 0.4s ease 0s;
+}
+
+.main.active #sidebar-wrapper {
+  left: 10px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+.inset {
+  padding: 15px;
+}
+
+}
+
+
+@media (max-width:400px) {
+#landinglogo {
+width: 260px;
+}
+}

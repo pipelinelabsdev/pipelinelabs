@@ -1,0 +1,355 @@
+
+.planselectpage .panel
+{
+    text-align: center;
+}
+.planselectpage .panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
+.planselectpage .panel-body
+{
+    padding: 0px;
+    text-align: center;
+}
+
+.planselectpage .the-price
+{
+    background-color: rgba(220,220,220,.17);
+    box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.planselectpage .the-price h1
+{
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.planselectpage .subscript
+{
+    font-size: 25px;
+}
+
+/* CSS-only ribbon styles    */
+.planselectpage .cnrflash
+{
+    /*Position correctly within container*/
+    position: absolute;
+    top: -9px;
+    right: 4px;
+    z-index: 1; /*Set overflow to hidden, to mask inner square*/
+    overflow: hidden; /*Set size and add subtle rounding  		to soften edges*/
+    width: 100px;
+    height: 100px;
+    border-radius: 3px 5px 3px 0;
+}
+.planselectpage .cnrflash-inner
+{
+    /*Set position, make larger then 			container and rotate 45 degrees*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 145px;
+    height: 145px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -o-transform: rotate(45deg); /* Opera */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
+    -ms-transform-origin: 100% 100%;  /* IE 9 */
+    -o-transform-origin: 100% 100%; /* Opera */
+    -moz-transform-origin: 100% 100%; /* Firefox */
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1,1,1,.2) 50%);
+    background-size: 4px,auto, auto,auto;
+    background-color: #aa0101;
+    box-shadow: 0 3px 3px 0 rgba(1,1,1,.5), 0 1px 0 0 rgba(1,1,1,.5), inset 0 -1px 8px 0 rgba(255,255,255,.3), inset 0 -1px 0 0 rgba(255,255,255,.2);
+}
+.planselectpage .cnrflash-inner:before, .cnrflash-inner:after
+{
+    /*Use the border triangle trick to make  				it look like the ribbon wraps round it's 				container*/
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border: 8px solid #800000;
+}
+.planselectpage .cnrflash-inner:before
+{
+    left: 1px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.planselectpage .cnrflash-inner:after
+{
+    right: 0;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.planselectpage .cnrflash-label
+{
+    /*Make the label look nice*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(1,1,1,.8);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+    color: #444;
+}
+
+.credit-card-box .input-group-addon i {
+	color: #444;
+}
+
+.planselectpage .credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.planselectpage .credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.planselectpage .credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.planselectpage .credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.planselectpage .credit-card-box .display-table {
+    display: table;
+}
+.planselectpage .credit-card-box .display-tr {
+    display: table-row;
+}
+.planselectpage .credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.planselectpage .credit-card-box .panel-heading img {
+    min-width: 180px;
+}
+.paymentform {
+	margin-bottom: 1.5em;
+}
+.credit-card-box .panel-heading h3 {
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+}
+
+.light-weight {
+    font-weight: 100 !important;
+}
+
+#herospace {
+    height: auto;
+    padding-bottom: 80px;
+}
+
+#herospace.home-hero .text-box {
+    padding-top: 80px;
+}
+
+#herospace .home-search {
+    width: 40%;
+    margin: 40px auto 0 auto;
+}
+
+.home-search input[type="text"] {
+    padding-left: 50px;
+    border-radius: 50px 0 0 50px !important;
+    border: 5px solid #fff;
+}
+
+.home-search input[type="text"]:focus {
+    box-shadow: none;
+}
+
+.home-search .input-group-addon {
+    position: absolute;
+    left: 10px;
+    z-index: 10;
+    background: none;
+    border: 0;
+    font-size: 2rem;
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.home-search .input-group-btn {
+    background-color: #fff;
+    border-radius: 0 50px 50px 0;
+}
+
+.home-search button {
+    border: 5px solid #fff;
+    border-radius: 50px;
+}
+
+.home-search .form-footer {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.grey-bg {
+    background-color: #f0f3f8;
+}
+
+.grey-text {
+    color: #666 !important;
+}
+
+.max-width-1080 {
+    max-width: 1080px;
+}
+
+.max-width-1200 {
+    max-width: 1200px;
+}
+
+.home-career-advice {
+    background-image: url("/uploads/general/home-career-advice.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-search-jobs {
+    background-image: url("/uploads/general/home-search.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-browse-companies {
+    background-image: url("/uploads/general/home-browse-companies.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.table {
+    display: table;
+}
+
+div.table-cell {
+    display: table-cell;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.font-size-16 {
+    font-size: 1.6rem;
+}
+
+.homepage-find-sales {
+    position: relative;
+    background-image: url('/img/assets/homepage-sale-job.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/assets/homepage-sale-job.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 480px;
+}
+
+.homepage-get-sales {
+    position: relative;
+    background-image: url('/img/assets/homepage-sale-job2.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/assets/homepage-sale-job2.png');
+    background-size: cover;
+    background-position: 65% 0%;
+    background-repeat: no-repeat;
+    height: 480px;
+}
+
+.homepage-sell-more {
+    position: relative;
+    background-image: url('/img/assets/homepage-sell-more.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/assets/homepage-sell-more.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 480px;
+}
+
+.career-advice-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 125px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.cal1 {
+    background-color: #00b6a1;
+}
+
+.cal2 {
+    background-color: #a5276e;
+}
+
+.cal3 {
+    background-color: #edc202;
+}
+
+.career-advice-content {
+    position: absolute;
+    padding: 25px;
+    color: white;
+    bottom: 0;
+}
+
+.career-advice-content h2 {
+    text-transform: uppercase;
+}
+
+.career-advice-content p {
+    color: white;
+    font-weight: 300;
+}
+
+.career-advice-content a.readmore {
+    display: block;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.career-advice-content a.readmore:hover {
+    background-color: #f74553;
+    border-color: #f74553;
+}
+
+.pipeline-help p {
+	font-weight: 300;
+}
